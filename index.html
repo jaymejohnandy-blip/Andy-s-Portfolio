@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jhon Andy's College Portfolio</title>
+<style>
+/* GENERAL STYLES */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin:0;
+  background:#f4f4f8;
+  color:#222;
+}
+header{
+  padding:30px 20px;
+  text-align:center;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+header h1{
+  margin:0;
+  font-weight:bold;
+}
+nav{
+  text-align:center;
+  padding:15px 0;
+  background:#fff;
+  box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+nav a{
+  color:#555;
+  margin:15px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+nav a:hover{
+  color:#6c63ff;
+}
+
+/* SECTIONS */
+section{
+  padding:60px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+h2{
+  color:#6c63ff;
+  margin-bottom:15px;
+}
+p{
+  color:#333;
+  line-height:1.6;
+}
+
+/* SPLIT CONTAINER */
+.container{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:40px;
+  margin-bottom:40px;
+}
+.left, .right{
+  flex:1;
+  min-width:280px;
+}
+.left h1{
+  font-size:2.5rem;
+  margin-bottom:10px;
+}
+.left p{
+  font-size:1.1rem;
+}
+.right img{
+  width:100%;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  margin-top:20px;
+}
+.gallery img{
+  width:300px;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* SKILLS */
+.skills-left{
+  margin-bottom:30px;
+}
+.skills-left h3{
+  margin-top:20px;
+}
+.skills-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.skills-images img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .container, .skills-container{
+    flex-direction:column;
+    text-align:center;
+  }
+  .left, .right, .skills-left, .skills-right{
+    min-width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Jhon Andy's College Portfolio</h1>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#daily">Daily Campus Life</a>
+<a href="#skills">Skills and Growth</a>
+<a href="#subjects">Subjects/Topic in Class</a>
+<a href="#conclusion">Conclusion/eflection</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+<div class="container">
+  <div class="left">
+    <h1>Hello! I’m Jhon Andy</h1>
+    <p>1st year BElemEd student</p>
+    <p>Welcome to my college portfolio. Here, you can explore my daily life in school, the skills I’ve learned, the subjects I’ve studied, and my reflections on my college journey. This portfolio shows how I’ve grown as a student and prepared for the future.</p>
+  </div>
+  <div class="right">
+    <img src="Andy.png" alt="Home Image">
+  </div>
+</div>
+</section>
+
+<!-- DAILY LIFE -->
+<section id="daily">
+<h2>Daily Campus Life</h2>
+<p>A typical day in my college life is full of learning and fun experiences. Starting college as a first-year student was a bit overwhelming because the environment is very different from high school. However, it has been enjoyable as I get to try new things every day. I have to wake up early to commute to school, which is something I didn’t have to do in high school. Every day is fulfilling because I’ve made close friends and classmates who support me in our activities. Spending time with them is fun, and I truly enjoy learning and growing together.</p>
+<div class="gallery">
+  <img src="Sub1.jpg" alt="Daily Life 1">
+  <img src="Sub2.jpeg" alt="Daily Life 2">
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills & Growth</h2>
+<div class="skills-left">
+  <h3>Time Management⏰</h3>
+  <p>I’ve learned how to organize my day and plan my tasks so I don’t miss deadlines.</p>
+  <h3>Communication</h3>
+  <p>Talking and sharing ideas with classmates has helped me express myself better and work together smoothly.</p>
+  <h3>Teamwork👥</h3>
+  <p>Working with friends on projects and activities taught me how to cooperate, help each other, and get things done as a team.</p>
+  <h3>Adaptability🤹</h3>
+  <p>College is new and different from high school, so I’ve learned to adjust to changes and handle challenges without stress.</p>
+  <h3>Problem Solving💡</h3>
+  <p>Whenever I face a problem, I try to find solutions quickly and confidently.</p>
+</div>
+<div class="skills-images">
+  <img src="skill1.jpeg" alt="Skills Image 1">
+  <img src="skill2.jpeg" alt="Skills Image 2">
+</div>
+</section>
+
+<!-- SUBJECTS -->
+<section id="subjects">
+<h2>Subjects / Topics in Class</h2>
+<p>These are the subjects that help me grow and develop the skills I need to become a good teacher:</p>
+<ul>
+  <li><strong>Physical Education (PE)</strong> – Sports, dance, and other activities to stay active and learn teamwork.</li>
+  <li><strong>History</strong> – Teaches me about the past and society's evolution.</li>
+  <li><strong>Information Technology (IT)</strong> – Develops practical digital skills for the modern world.</li>
+  <li><strong>Science</strong> – Gives knowledge about the natural world and how things work.</li>
+  <li><strong>NSTP</strong> – Teaches community service, discipline, and social responsibility.</li>
+  <li><strong>Understanding Yourself</strong> – Helps reflect on strengths, weaknesses, and personal growth.</li>
+</ul>
+<div class="gallery">
+  <img src="subj1.jpeg" alt="Subject Image 1">
+  <img src="subj2.jpg" alt="Subject Image 2">
+</div>
+</section>
+
+<!-- CONCLUSION -->
+<section id="conclusion">
+<h2>Conclusion / Reflection</h2>
+<p>My first year in college has been a journey of growth and learning. I’ve faced new challenges, made friends, and developed important skills like time management, teamwork, and adaptability. Every class, activity, and experience has helped me grow both academically and personally. This portfolio reflects my journey so far and shows how I am preparing to become a good teacher in the future.</p>
+</section>
+
+</body>
+</html>
